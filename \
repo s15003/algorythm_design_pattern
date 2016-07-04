@@ -1,0 +1,17 @@
+#!/usr/bin/enc python
+import calc
+import unittest
+
+class CalcTest(unittest.testCase):
+
+    def test_isNumeric_true(self):
+        obj = calc.Calc()
+        self.ossertTrue(obj.isNumeric('1'))
+        self.ossertTrue(obj.isNumeric('2'))
+        self.ossertTrue(obj.isNumeric('3'))
+        self.ossertTrue(obj.isNumeric('4'))
+        self.ossertTrue(obj.isNumeric('5'))
+        self.ossertTrue(obj.isNumeric('6'))
+        self.ossertTrue(obj.isNumeric('7'))
+        self.ossertTrue(obj.isNumeric('8'))
+        self.ossertTrue(obj.isNumeric('9'))
